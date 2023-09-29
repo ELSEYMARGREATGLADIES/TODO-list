@@ -1,0 +1,42 @@
+* {
+  box-sizing: border-box;
+}
+
+/* Remove margins and padding from the list */
+ul {
+  margin: 30px;
+  padding: 10px;
+}
+
+/* Style the list items */
+ul li {
+  cursor: pointer;
+  position: relative;
+  padding: 15px 8px 15px 20px;
+  background: #eee;
+  font-size: 25px;
+  transition: 0.2s;
+
+  /* make the list items unselectable */
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Set all odd list items to a different color (zebra-stripes) */
+ul li:nth-child(odd) {
+  background: darkgrey;
+}
+
+/* Darker background-color on hover */
+ul li:hover {
+  background: greenyellow;
+}
+
+/* When clicked on, add a background color and strike out text */
+ul li.checked {
+  background: lightyellow;
+  color: orange;
+  text-decoration: line-through;
+}
